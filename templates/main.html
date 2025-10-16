@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Geomatique</title>
+</html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="../static/page/main.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="">
+    </script>
+
+    <script src="https://cdd.jsdelivr.net/npm/vue"></script>
+</head>
+
+<!-- 
+Lancer le programme avec flask --debug run  
+-->
+
+<!--
+Objectif 16/10/25:
+
+Créer une barre de recherche où on renseigne une adresse, et lorsqu'on appuit sur le bouton,
+on nous renvoie sur l'adresse.
+
+-->
+
+<body>
+    <form id="entete" action="" style="background-color:lightcyan; padding:1vw;">
+        <input type="text" id="recherche">
+        <button id="button">OK</button>
+    </form>
+    <div id="map"></div>
+    <script src="../static/map.js"></script>
+</body>
+
